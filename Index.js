@@ -19,7 +19,7 @@ class Index {
 
   static async setUpDatabase() {
     const client = new mongodb.MongoClient(process.env.BOOKREVIEWS_DB_URI);
-    const port = process.env.PORT || 5000;
+    const port = process.env.PORT || 3000;
     try {
       // Connect to the MongoDB cluster
       await client.connect();
